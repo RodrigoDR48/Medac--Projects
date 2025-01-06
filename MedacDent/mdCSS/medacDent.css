@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ################################  BODY  ######################################## */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Hace que el body ocupe todo el alto de la pantalla */
+}
+
+/* ################################  HEADER  ######################################## */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    height: 20vh;/* El header ocupa el 20% de la pantalla */       
+    background-color: white;
+}
+
+/* Contenedor de la imagen del logo */
+.cabecera-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la imagen, asegurando que no se distorsione */
+.cabecera-logo img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* ################################  MAIN  ######################################## */
+
+main {
+    flex: 1; /* Ocupa el espacio restante */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ################################ MAIN - SECTION 1  ######################################### */
+
+.seccion1Main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ################################  MAIN - SECTION 2  ######################################## */
+
+.seccion2Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 50vh;
+}
+
+.boton-cita, .boton-listar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-cita a, .boton-listar a {
+    text-decoration: none;
+}
+
+.btn-lg {
+    font-size: 2rem;        
+    padding: 40px 80px;       
+    min-width: 300px;        
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ################################  FOOTER  ######################################## */
+
+footer {
+    background-color: white; 
+    padding: 20px; 
+    position: relative;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.contenidoFooter {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+}
+footer .footer-logo img {
+    margin-left: 65px;
+    width: 40px;  /* O ajusta el tamaño a lo que necesites */
+    height: auto;   /* Mantiene la proporción de la imagen */
+    border-radius: 15%;
+}
+
+
+footer .footer-logo {
+    flex: 0 1 auto; /* Toma el espacio central */
+    text-align: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+footer .derechos, footer .copyright{
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+footer .copyright{
+    text-align: right; 
+    margin-right: 20px; 
+}
+
+footer .derechos {
+    text-align: left; 
+    margin-left: 20px; 
+}
+
