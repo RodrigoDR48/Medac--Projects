@@ -1,0 +1,210 @@
+:root {
+    --color-principal: #9982cb;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes y colores globales */
+body {
+    background-color: var(--color-principal);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #9e9c9c;
+}
+
+h1:hover{
+    transform: scale(1.10);
+    color: var(--color-principal);
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-top: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* main */
+
+main a{
+    text-decoration: none;
+}
+
+
+/* Selector de color */
+#color-selector {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Sección de rebaja destacada */
+.rebaja-destacada {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto-info {
+    display: flex;
+    align-items: center; /* Centra verticalmente imagen y texto */
+    justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+.rebaja-destacada img {
+    width: 70%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.texto {
+    max-width: 50%; /* Define el espacio disponible para el texto */
+    text-align: left;
+}
+
+.rebaja-destacada p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.rebaja-destacada p strong {
+    color: #ff6f61;
+}
+
+.rebaja-destacada p:last-of-type {
+    margin-top: 20px; /* Espacio para el último <p> debajo de la imagen */
+    text-align: center; /* Centra el último párrafo */
+}
+
+.imagen-con-etiqueta {
+    position: relative;
+    display: inline-block;
+}
+
+.producto-destacado {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.producto-info .etiqueta-precio {
+    position: absolute;
+    top: 10px; /* Ajusta según necesites */
+    right: 10px; /* Ajusta según necesites */
+    width:150px !important; /* Tamaño más pequeño con prioridad */
+    height: auto !important; /* Mantiene la proporción con prioridad */
+    z-index: 10;
+}
+
+.boton-comprar {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.btn-comprar {
+    background-color: #ff4500; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Tamaño del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efectos de transición */
+}
+
+.btn-comprar:hover {
+    background-color: #ff6347; /* Cambia de color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333; 
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.informacion {
+    flex: 1; 
+    max-width: 40%;  
+    color: #fff; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mapa {
+    flex: 1; 
+    max-width: 60%; 
+    height: 300px;
+}
+
+.mapa iframe {
+    width: 100%; 
+    height: 100%;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .rebaja-destacada img {
+        width: 100%; /* Imagen ocupa todo el ancho en pantallas pequeñas */
+    }
+
+    .producto-info {
+        flex-direction: column; /* Coloca imagen y texto en una columna */
+        text-align: center;
+    }
+
+    .texto {
+        max-width: 100%; /* Asegura que el texto ocupe todo el ancho */
+        text-align: center;
+    }
+
+    footer iframe {
+        max-width: 100%;
+    }
+}

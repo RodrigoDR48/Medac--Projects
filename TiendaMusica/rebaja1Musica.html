@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rebaja Destacada</title>
+        <link rel="stylesheet" href="rebajaCss.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <h1>Tienda de Música</h1>
+            </a>
+            <p>Somos expertos en discos de vinilo</p>
+            <div>
+                <label for="color-selector">Elige un color:</label>
+                <select id="color-selector" onchange="cambiarColor(this.value)">
+                    <option value="#9982cb">Por defecto</option>
+                    <option value="#ffefd5">Beige</option>
+                    <option value="#d1e7dd">Verde Claro</option>
+                    <option value="#cfe2f3">Azul Claro</option>
+                    <option value="#fff3cd">Amarillo Claro</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="rebaja-destacada">
+            <div class="producto-info">
+                <div class="imagen-con-etiqueta">
+                    <img src="../TiendaMusica/Imgs/record-player-4690932_640.jpg" alt="imagen1" class="producto-destacado">
+                    <img src="../TiendaMusica/Imgs/price-tag-1673586_640.png" alt="Etiqueta de precio" class="etiqueta-precio">
+                </div>
+                <div class="texto">
+                    <h2>Rebaja del 70%</h2>
+                    <p><strong>Precio anterior:</strong> 100€</p>
+                    <p><strong>Precio con rebaja:</strong> 30€</p>
+                </div>
+            </div>
+            <div class="producto-detallado">
+                <p>Reproductor de Vinilo Compacto: "SoundBox Mini"</p>
+                <p>Marca: VinylTech</p>
+                <p>Modelo: SoundBox Mini</p>
+                <p>Diseño: Moderno y Compacto</p>
+                <p>Conectividad: Bluetooth, Entrada AUX, Altavoces Integrados</p>
+                    
+                <p>El SoundBox Mini de VinylTech es un reproductor de vinilo moderno y compacto, diseñado para aquellos que desean disfrutar de la calidez y el encanto del vinilo, pero con la comodidad de un dispositivo portátil y funcional. Su tamaño compacto lo convierte en la opción ideal para espacios pequeños, sin sacrificar calidad de sonido ni estilo.</p>
+                    
+                <p>Este reproductor es perfecto para los amantes de la música que buscan una forma sencilla de escuchar sus discos favoritos. Viene equipado con altavoces integrados de alta calidad que ofrecen un sonido nítido y envolvente, adecuado para habitaciones de tamaño medio. Además, tiene la opción de conectarse a otros altavoces mediante Bluetooth o entrada AUX, brindando flexibilidad para personalizar la experiencia de audio.</p>
+                    
+                <p>Características Destacadas:</p>
+                    
+                <p>Diseño Compacto: Con un tamaño reducido, el SoundBox Mini es ideal para cualquier espacio, desde escritorios hasta estanterías.</p>
+                <p>Reproducción de 33 y 45 RPM: Compatible con discos de vinilo de tamaño estándar y de 7 pulgadas.</p>
+                <p>Altavoces Integrados de Alta Calidad: Para una experiencia de sonido clara y potente sin necesidad de altavoces externos.</p>
+                <p>Conectividad Bluetooth: Permite la transmisión inalámbrica de audio a altavoces o auriculares Bluetooth.</p>
+                <p>Entrada AUX: Conector de 3,5 mm para conectar otros altavoces o dispositivos externos.</p>
+                <p>Construcción Robusta: Materiales duraderos y una estética moderna que combina perfectamente con cualquier decoración.</p>
+                 
+                <p>  El SoundBox Mini es el reproductor perfecto para los entusiastas del vinilo que buscan un equipo accesible, elegante y funcional. Ya sea para disfrutar de tus discos clásicos o para explorar nuevos sonidos, este reproductor compacta la esencia del vinilo con tecnología moderna.</p>
+                
+            </div>
+        </section>
+        <section class="boton-comprar">
+            <button class="btn-comprar">COMPRAR</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="informacion">
+                <p><strong>Dirección:</strong> C/Vendeja nº5, Málaga, España</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Email:</strong> info@tiendademusica.com</p>
+                <p><strong>Observaciones:</strong> Visítanos para encontrar los mejores vinilos.</p>
+            </div>
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31893.52721781793!2d-4.421397792129868!3d36.72130226394314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7228f1e6c62db5%3A0xb49088d92ec3a70a!2sM%C3%A1laga!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

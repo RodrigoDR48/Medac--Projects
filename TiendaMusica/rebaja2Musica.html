@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rebaja Destacada</title>
+        <link rel="stylesheet" href="rebajaCss.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <h1>Tienda de Música</h1>
+            </a>
+            <p>Somos expertos en discos de vinilo</p>
+            <div>
+                <label for="color-selector">Elige un color:</label>
+                <select id="color-selector" onchange="cambiarColor(this.value)">
+                    <option value="#9982cb">Por defecto</option>
+                    <option value="#ffefd5">Beige</option>
+                    <option value="#d1e7dd">Verde Claro</option>
+                    <option value="#cfe2f3">Azul Claro</option>
+                    <option value="#fff3cd">Amarillo Claro</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="rebaja-destacada">
+            <div class="producto-info">
+                <div class="imagen-con-etiqueta">
+                    <img src="../TiendaMusica/Imgs/vinyl-1274942_640.jpg" alt="imagen2" class="producto-destacado">
+                    <img src="../TiendaMusica/Imgs/price-tag-1673586_640.png" alt="Etiqueta de precio" class="etiqueta-precio">
+                </div>
+                <div class="texto">
+                    <h2>Rebaja del 70%</h2>
+                    <p><strong>Precio anterior:</strong> 15€</p>
+                    <p><strong>Precio con rebaja: </strong>3,50€</p>
+                </div>
+            </div>
+            <div class="producto-detallado">
+                <p>Álbum: "Revolución Sonora"</p>
+                <p>Artista: The Sound Waves</p>
+                <p>Género: Rock Psicodélico</p>
+                <p>Año de Lanzamiento: 1975</p>
+                <p>Formato: Vinilo de 12 pulgadas, edición limitada en vinilo transparente</p>
+                <p>Velocidad: 33 RPM</p>
+                
+                <p>"Revolución Sonora" es el tercer álbum de estudio de la banda The Sound Waves, lanzado originalmente en 1975. Esta edición especial de vinilo está prensada en un vinilo transparente de alta calidad, lo que no solo añade un toque visual, sino que también mejora la calidad del sonido, proporcionando una experiencia auditiva nítida y envolvente.</p>
+                
+                <p>El álbum cuenta con un sonido característico del rock psicodélico de la época, con largas improvisaciones instrumentales, guitarras distorsionadas y una atmósfera surrealista en cada pista. Con temas como "Caminos Perdidos" y "Espejos Rotos", la banda explora temas de conciencia expandida y revolución cultural.</p>
+                
+                <p>La edición limitada incluye una portada única con ilustraciones psicodélicas y un folleto adicional con fotos inéditas de la banda y notas escritas por el productor del disco, Brian Thomas.</p>
+                
+                <p>Características destacadas:</p>
+                
+                <p>Edición limitada de 500 copias.</p>
+                <p>Vinilo transparente de 180 gramos para una mejor calidad de sonido.</p>
+                <p>Portada con ilustraciones psicodélicas inspiradas en los movimientos artísticos de los años 70.</p>
+                <p>Incluye un folleto exclusivo con fotos inéditas de la banda y notas del productor.</p>
+                
+                <p>Ideal para los coleccionistas y amantes del rock clásico que buscan una pieza única para su colección. ¡Una verdadera joya del vinilo!</p>
+            </div>
+        </section>
+        <section class="boton-comprar">
+            <button class="btn-comprar">COMPRAR</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="informacion">
+                <p><strong>Dirección:</strong> C/Vendeja nº5, Málaga, España</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Email:</strong> info@tiendademusica.com</p>
+                <p><strong>Observaciones:</strong> Visítanos para encontrar los mejores vinilos.</p>
+            </div>
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31893.52721781793!2d-4.421397792129868!3d36.72130226394314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7228f1e6c62db5%3A0xb49088d92ec3a70a!2sM%C3%A1laga!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
